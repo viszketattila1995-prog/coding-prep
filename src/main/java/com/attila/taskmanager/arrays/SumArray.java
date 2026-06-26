@@ -8,15 +8,25 @@ public class SumArray {
 
         System.out.println(sumArray(arrayList));
 
+        System.out.println(sumArrayTwo(arrayList));
+
     }
 
     public static int sumArray(int[] input) {
         int num = 0;
 
         for (int i = 0; i < input.length; i++) {
-            int numAtI = input[i];
-            num = num + numAtI;
+            num = num + input[i];
         }
         return num;
+    }
+
+    public static int sumArrayTwo(int[] input) {
+        int sum = 0;
+
+        for (int number : input) {
+            sum = sum + number;
+        }
+        return sum;
     }
 }
